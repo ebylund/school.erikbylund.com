@@ -3,8 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+	<style>
+	@import 'importStyle.css';
+		#customId2 {
+			color:orange;
+			font-size:1in;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	
+	<ul>
+		<li id="customId1" style="color:blue;">This text is using inline styles</li>
+		<li id="customId2">This text is using embedded styles</li>
+		<li id="customId3">This text is using external styles</li>
+		<li id="customId4">This text is using imported styles</li>
+	</ul>
 </body>
 </html>
