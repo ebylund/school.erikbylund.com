@@ -34,4 +34,41 @@
 .headerContainer {
   text-align: center; }
 
+.summary {
+  /*border:solid 1px black;*/
+  margin: 0 auto;
+  position: relative;
+  width: 600px;
+  top: 25px;
+  color: white; }
+  .summary h1 {
+    text-align: center; }
+
+.videoContainer {
+  position: relative;
+  top: 50px;
+  text-align: center; }
+
+.downloadContainer {
+  color: white;
+  text-align: center; }
+  .downloadContainer h2 {
+    font-size: 48px; }
+  .downloadContainer h2:last-child {
+    position: relative;
+    top: -45px; }
+
+#texty {
+  color: #43332A; }
+
+#angry {
+  color: #EDD54A; }
+
+.downloadButton {
+  background-color: #EDD54A;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #43332A; }
+
 /*# sourceMappingURL=subStyle.css.map */

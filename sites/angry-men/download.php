@@ -13,7 +13,15 @@
 
 	<div class="container">
 		<?php include 'subPageHeader.php'; ?>
+		<div class="downloadContainer">
 
+			<h2>All movies should be free</h2>
+			<div class="downloadButton">
+				DOWNLOAD HERE
+			</div>
+			<h2>Download <span id="texty">12</span> <span id="angry">Angry</span> <span id="men">Men</span></h2>
+			<h2>No strings attached</h2>
+		</div>
 	</div>
 
 	<div class="subBottomBar"></div>
