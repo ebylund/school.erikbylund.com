@@ -7,18 +7,8 @@
 </head>
 <body>
 
-	<nav class="clear">
-		<div class="navMenu">
-			<ul>
-				<li class="navMenuItem"><a href="">HOME</a></li>
-				<li class="navMenuItem"><a href="">CAST</a></li>
-				<li class="navMenuItem"><a href="">STORY</a></li>
-				<li class="navMenuItem"><a href="">IMAGES</a></li>
-				<li class="navMenuItem"><a href="">TRAILER</a></li>
-				<li class="navMenuItem"><a href="">DOWNLOAD</a></li>
-			</ul>
-		</div>
-	</nav>
+	<?php include 'nav.php';?>
+
 	<div class="container">
 		<div class="jurorNav">
 			<div class="jurorBox"><img src="img/outline01.png" id="juror1" class="juror" /></div>
@@ -28,12 +18,14 @@
 			<div class="jurorBox"><img src="img/outline05.png" id="juror5" class="juror" /></div>
 			<div class="jurorBox"><img src="img/outline06.png" id="juror6" class="juror" /></div>
 		</div>
-		<div class="centerPiece">
-			<img src="img/12AngryMenStag.svg" alt="12 man" class="piece">
-		</div>
-			<div class="centerPiece">
-				<img src="img/quote.svg" alt="12 man" class="piece">
+		<div class="center">
+			<div id="angryTitleStag">
+				<img src="img/12AngryMenStag.svg" alt="12 man" >
 			</div>
+			<div id="quoteTitle">
+				<img src="img/quote.svg" alt="12 man" >
+			</div>
+		</div>
 	</div>
 
 	<div class="Bottom">
@@ -50,6 +42,8 @@
 	<div class="bottomBar"></div>
 	<div class="bottomBar bottomBar1"></div>
 	<div class="bottomBar bottomBar2"></div>
+
+	<?php include 'footer.php';?>
 
 </body>
 </html>

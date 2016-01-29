@@ -15,8 +15,8 @@ nav {
 	position:relative;
 	top: 105px;
 	z-index: 5;
-
 }
+
 nav ul {
 	margin: 0 auto;
 }
@@ -42,7 +42,7 @@ li a {
 .container {
 	width: 960px;
 	margin: 0 auto;
-	/*border-left: solid 1px #43332A;*/
+	/*border: solid 1px #fff;*/
 }
 
 .navMenu {
@@ -99,6 +99,12 @@ li a {
 	bottom: 30px;
 }
 
+.bottomBar2 {
+	opacity: .2;
+	height: 57px;
+	bottom: 20px;
+}
+
 .centerIt {
 	position:relative;
 	left: 60px;
@@ -110,8 +116,32 @@ li a {
 	display:block;
 }
 
+.center {
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-top: -100px;
+	margin-left: -275px;
+	/*border: solid 1px #000;*/
+}
+
+#angryTitleStag {
+	position:relative;
+	/*border: solid 1px #000;*/
+	text-align: center;
+}
+
+#quoteTitle {
+	position:relative;
+	/*border: solid 1px #000;*/
+	text-align: center;
+}
+
 .piece {
 	position:relative;
 	top:80px;
 }
 
+.current{
+	color: #fff;
+}
