@@ -13,6 +13,13 @@
 
 	<div class="container">
 		<?php include 'subPageHeader.php'; ?>
+		<div class="imagesContainer">
+			<div class="imageBox"><img class="galleryImage" src="img/sq01.jpg" alt=""></div>
+			<div class="imageBox"><img class="galleryImage" src="img/sq02.jpg" alt=""></div>
+			<div class="imageBox"><img class="galleryImage" src="img/sq03.jpg" alt=""></div>
+			<div class="imageBox"><img class="galleryImage" src="img/sq05.jpg" alt=""></div>
+			<div class="clear"></div>
+		</div>
 
 	</div>
 

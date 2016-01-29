@@ -89,3 +89,25 @@
 	border-radius: 10px;
 	color: #43332A;
 }
+
+.imagesContainer {
+	margin:0 auto;
+	text-align: center;
+	width: 340px;
+	position:relative;
+	top: 30px;
+}
+
+.imageBox {
+	width: 150px;
+	height: 150px;
+	float:left;
+	margin: 10px;
+}
+
+.galleryImage {
+	max-width: 150px;
+	width: auto;
+	max-height: 150px;
+	height:auto;
+}
