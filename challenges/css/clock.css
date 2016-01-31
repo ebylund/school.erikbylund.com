@@ -1,0 +1,26 @@
+body {
+  background: #eee;
+}
+
+svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.filler {
+	/*background: #20B7AF;*/
+	background: rgb(32, 183, 175);
+	background: -moz-linear-gradient(30deg, rgb(32, 183, 175) 0%, rgb(32, 145, 175) 100%);
+	background: -webkit-linear-gradient(30deg, rgb(32, 183, 175) 0%, rgb(32, 145, 175) 100%);
+	background: -o-linear-gradient(30deg, rgb(32, 183, 175) 0%, rgb(32, 145, 175) 100%);
+	background: -ms-linear-gradient(30deg, rgb(32, 183, 175) 0%, rgb(32, 145, 175) 100%);
+	background: linear-gradient(120deg, rgb(32, 183, 175) 0%, rgb(32, 145, 175) 100%);
+	position: absolute;
+	bottom: 50%;
+	top: 0;
+	left: 0;
+	right: 0;
+}
