@@ -71,3 +71,27 @@ blockquote:before {
 blockquote p {
     display: inline;
 }
+
+.list-group{
+    list-style: none;
+    text-align: center;
+}
+
+.related {
+    text-align: center;
+
+}
+
+.list-group-item {
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+}
+.sideski {
+    margin-top: 50px;
+    border: solid 1px black;
+}
+
+.panel-pane {
+    list-style: none;
+    display: inline;
+}
