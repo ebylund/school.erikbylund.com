@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hola</title>
+    <style media="screen">
+
+        .container{
+            border:solid 1px black;
+        }
+
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: "";
+            clear: both;
+            height: 0;
+        }
+
+        .boxy {
+            width:100px;
+            height: 400px;
+            margin: 0 20px;
+            border: solid 1px black;
+            background-color: grey;
+            float:left;
+        }
+
+        .boxy:after {
+
+        }
+
+        .bottom {
+            width: 100%;
+            height: 100px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="boxy">1</div>
+        <div class="boxy">2</div>
+        <div class="boxy">3</div>
+    </div>
+        <div class="bottom">bottom</div>
+</body>
+</html>
