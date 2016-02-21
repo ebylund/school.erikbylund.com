@@ -1,0 +1,91 @@
+@font-face {
+  font-family: myFont;
+  src: url("../fonts/Aller_Bd.ttf"); }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: myFont; }
+
+.container {
+  border: 1px solid #000;
+  max-width: 768px;
+  margin: 0 auto; }
+
+header {
+  background-image: url("../images/top-blue.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid yellow; }
+  header nav {
+    background-color: rgba(29, 28, 53, 0.67);
+    text-align: center;
+    position: relative; }
+    header nav:hover ul li {
+      display: block; }
+    header nav .hamburger_icon {
+      background-image: url("../images/hamb.svg");
+      width: 50px;
+      height: 50px; }
+    header nav .hamburger_menu {
+      list-style: none;
+      width: 100%;
+      top: 0; }
+      header nav .hamburger_menu li {
+        display: none; }
+        header nav .hamburger_menu li a {
+          text-decoration: none;
+          color: white; }
+  header .hello {
+    text-align: center;
+    position: relative;
+    top: 35px;
+    border: 1px solid red; }
+    header .hello h1 {
+      margin: 0 auto;
+      display: inline-block;
+      color: white;
+      font-size: 5vw; }
+    header .hello .camera_icon {
+      background-image: url("../images/hamb.svg");
+      position: relative;
+      right: 9%;
+      width: 50px;
+      height: 50px; }
+  header .header_content {
+    width: 100%;
+    height: 50%;
+    border: 1px solid blue;
+    position: absolute;
+    bottom: 0px; }
+    header .header_content .header_left {
+      background-color: red;
+      width: 65%;
+      height: 100%;
+      float: left; }
+    header .header_content .header_right {
+      float: right;
+      background-color: grey;
+      width: 35%;
+      height: 100%; }
+
+.about {
+  border: 1px solid #000;
+  min-height: 300px; }
+
+.feature {
+  border: 1px solid #000;
+  min-height: 300px; }
+
+.contact {
+  border: 1px solid #000;
+  min-height: 300px; }
+
+footer {
+  border: 1px solid #000;
+  min-height: 300px; }
+
+/*# sourceMappingURL=style.css.map */

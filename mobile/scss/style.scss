@@ -1,0 +1,141 @@
+$accent-blue-hue: 242;
+$accent-blue-saturation: 31%;
+$accent-blue-lightness: 16%;
+$accent-blue-alpha: 67%;
+
+$accent-blue: hsla($accent-blue-hue, $accent-blue-saturation, $accent-blue-lightness, $accent-blue-alpha);
+$rgba-blue: rgba($accent-blue, .67);
+
+@font-face {
+	font-family: myFont;
+	src: url("../fonts/Aller_Bd.ttf");
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: myFont;
+}
+
+.container{
+	border: 1px solid #000;
+	max-width: 768px;
+	margin: 0 auto;
+}
+
+header {
+	background-image: url('../images/top-blue.png');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid yellow;
+	nav {
+		background-color: $rgba-blue;
+		text-align: center;
+		position: relative;
+		&:hover ul li{
+			display: block;
+		}
+		.hamburger_icon {
+			background-image: url('../images/hamb.svg');
+			width: 50px;
+			height: 50px;
+		}
+
+		.hamburger_menu { // this is a ul element
+
+			list-style: none;
+			// position: absolute;
+			// background-color: $rgba-blue;
+			width: 100%;
+			top: 0;
+
+			li {
+				display: none;
+				a {
+					text-decoration: none;
+					color: white;
+				}
+
+			}
+
+		}
+	}
+	.hello {
+		text-align: center;
+		// width: 50%;
+		position: relative;
+		top:35px;
+		border: 1px solid red;
+		h1 {
+			// position: absolute;
+			margin: 0 auto;
+			display: inline-block;
+			// width: 100%;
+			// height: 100%;
+			color: white;
+			font-size: 5vw;
+
+		}
+		.camera_icon {
+			background-image: url('../images/hamb.svg');
+			position: relative;
+			right: 9%;
+			width: 50px;
+			height: 50px;
+		}
+
+
+	}
+	.header_content {
+		width: 100%;
+		height: 50%;
+		border: 1px solid blue;
+		position: absolute;
+		bottom: 0px;
+
+
+		.header_left {
+			background-color: red;
+			width: 65%;
+			height: 100%;
+			float: left;
+
+		}
+
+		.header_right {
+			float: right;
+			background-color: grey;
+			width: 35%;
+			height: 100%;
+		}
+
+	}
+}
+
+.about {
+	border: 1px solid #000;
+	min-height: 300px;
+
+}
+
+.feature {
+	border: 1px solid #000;
+	min-height: 300px;
+
+}
+
+.contact {
+	border: 1px solid #000;
+	min-height: 300px;
+
+}
+
+footer {
+	border: 1px solid #000;
+	min-height: 300px;
+
+}
