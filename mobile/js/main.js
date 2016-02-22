@@ -1,16 +1,18 @@
 $(document).ready(function() {
-    // console.log("boom!");
-    $size = Math.floor($(".container").width());
-    $boxSize = ($size/8)+"px";
-    $(".hello h1").css("font-size", ($size/90)+"em");
-    $(".hello .camera_icon").css("width", $boxSize).css("height", $boxSize);
 
-    $( window ).resize(function() {
-        // console.log(Math.floor($( ".container" ).width()/32)+"px");
+    resizeElems = function () {
         $size = Math.floor($(".container").width());
         $boxSize = ($size/8)+"px";
-        console.log($size);
+        $leftBox = $(".header_left").width();
         $(".hello h1").css("font-size", ($size/90)+"em");
         $(".hello .camera_icon").css("width", $boxSize).css("height", $boxSize);
-    });
+        $(".p_big").css("font-size", ($leftBox/110)+"em" );
+        $(".p1, .p4").css("font-size", ($leftBox/190)+"em" );
+        $("header").css("height", ($size/7.68)+"vh");
+        $(".app_heading > .app_header_container > h2").css("font-size", ($size/450)+"em");
+        $(".about_us_content_left > p").css("font-size", ($size/600)+"em");
+    };
+
+    resizeElems();
+    $( window ).resize(resizeElems);
 });

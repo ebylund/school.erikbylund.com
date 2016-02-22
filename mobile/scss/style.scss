@@ -7,14 +7,19 @@ $accent-blue: hsla($accent-blue-hue, $accent-blue-saturation, $accent-blue-light
 $rgba-blue: rgba($accent-blue, .67);
 
 @font-face {
-	font-family: myFont;
+	font-family: AllerBd;
 	src: url("../fonts/Aller_Bd.ttf");
+}
+
+@font-face {
+	font-family: AllerRg;
+	src: url("../fonts/Aller_Rg.ttf");
 }
 
 body {
 	padding: 0;
 	margin: 0;
-	font-family: myFont;
+	font-family: AllerBd;
 }
 
 .container{
@@ -28,10 +33,10 @@ header {
 	background-size: cover;
 	background-position: center;
 	width: 100%;
-	min-height: 100vh;
+	height: 100vh;
 	margin: 0 auto;
 	position: relative;
-	border: 1px solid yellow;
+	// border: 1px solid yellow;
 	nav {
 		background-color: $rgba-blue;
 		text-align: center;
@@ -69,7 +74,7 @@ header {
 		// width: 50%;
 		position: relative;
 		top:35px;
-		border: 1px solid red;
+		// border: 1px solid red;
 		h1 {
 			// position: absolute;
 			margin: 0 auto;
@@ -93,49 +98,205 @@ header {
 	.header_content {
 		width: 100%;
 		height: 50%;
-		border: 1px solid blue;
+		// border: 1px solid blue;
 		position: absolute;
 		bottom: 0px;
 
 
 		.header_left {
-			background-color: red;
+			font-family: AllerRg;
+			// background-color: $rgba-blue;
+			position: relative;
 			width: 65%;
 			height: 100%;
 			float: left;
+
+			.header_content_container {
+				// border: 1px solid white;
+				position: absolute;
+				bottom: 10%;
+				width: 100%;
+				margin: auto 0;
+
+
+				p {
+					color: white;
+					padding: 0 7%;
+					margin: 0;
+					// font-size: 1.75em;
+				}
+
+				.p1 {
+
+				}
+
+				.p2 {
+					// font-size: 2.75em;
+					margin:-8px 0 -15px 0;
+				}
+
+				.p3 {
+					// font-size: 2.75em;
+					margin:-5px 0;
+				}
+
+				.p4	{
+
+				}
+
+			}
 
 		}
 
 		.header_right {
 			float: right;
-			background-color: grey;
+			// background-color: $rgba-blue;
 			width: 35%;
 			height: 100%;
-		}
+			position: relative;
+			.dual_phones {
+				max-width: 90%;
+				max-height: 90%;
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
 
+			}
+		}
 	}
+}
+
+.app {
+	background-color: $accent-blue;
+	color:white;
+	position: relative;
+
+	.app_heading {
+		position: relative;
+		font-family: AllerRg;
+		width:70%;
+		margin:auto;
+		height: auto;
+		// border: 1px solid white;
+		text-align: center;
+		// padding-top: 10%;
+
+		.app_header_container {
+			border: 1px solid $accent-blue;
+			// height: 200px;
+
+			h2 {
+				margin: 20px 0;
+				font-size: 1.75em;
+				// vertical-align: middle;
+			}
+		}
+	}
+
+	.download_button {
+		background-color: hsla(84, 60%, 40%, 1);
+		text-transform: uppercase;
+		border-radius: 5px;
+		position: relative;
+		margin: auto;
+		width: 50%;
+		height: 80px;
+		line-height: 80px;
+		text-align: center;
+	}
+
+	.download_locations {
+		// border: 1px solid white;
+		margin: auto;
+		width:50%;
+		height: 100px;
+
+
+		.app_store {
+			float: left;
+			// border: 1px solid red;
+			box-sizing: border-box;
+			width:50%;
+			vertical-align: middle;
+			.apple_image {
+				width:100%;
+
+			}
+
+		}
+		.play_store {
+			float:right;
+			// border: 1px solid green;
+			box-sizing: border-box;
+			width:50%;
+			.google_image {
+				width:100%;
+			}
+
+		}
+	}
+
+
 }
 
 .about {
 	border: 1px solid #000;
-	min-height: 300px;
+	background-color: #ddd;
+	.about_us_header {
+		border: 1px solid #000;
+		width: 100%;
+		text-align: center;
+		h1 {
+			font-size: 2em;
+		}
+
+	}
+
+	.about_us_content {
+		font-family: AllerRg;
+		max-height: 200px;
+		.about_us_content_left {
+			width: 60%;
+			float: left;
+			max-height: 100%;
+			background-color: #aaa;
+			p {
+				margin: 10px;
+				line-height: 30px;
+				font-size: 1.2em;
+			}
+
+		}
+
+		.about_us_content_right {
+			width: 40%;
+			float: right;
+			// max-height: 100%;
+			background-color: #888;
+			position: relative;
+			.single_phone {
+				// position: absolute;
+				max-width: 90%;
+				max-height: 100%;
+			}
+
+		}
+
+	}
 
 }
 
 .feature {
 	border: 1px solid #000;
-	min-height: 300px;
 
 }
 
 .contact {
 	border: 1px solid #000;
-	min-height: 300px;
 
 }
 
 footer {
 	border: 1px solid #000;
-	min-height: 300px;
 
 }
