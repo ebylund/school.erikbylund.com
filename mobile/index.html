@@ -11,11 +11,10 @@
             <nav>
                 <img class="hamburger_icon" src="images/hamb.svg" alt="hamburger_menu">
                 <ul class="hamburger_menu">
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">item</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="hello">
@@ -61,7 +60,7 @@
         <section class="about">
 
             <div class="about_us_header">
-                <h1>About Us</h1>
+                <span class="about_us">About Us</span>
             </div>
 
             <div class="about_us_content">
@@ -75,12 +74,12 @@
                         a designer with entrepreneurial mindset.
                     </p>
 
-                    <img src="" alt="" class="ellipses">
+                    <img src="images/ellipses.svg" alt="ellipses" class="ellipses">
 
                 </div>
 
                 <div class="about_us_content_right">
-                    <img src="images/single_phone.png" alt="single phone" class="single_phone">
+                    <!-- <img src="images/single_phone.png" alt="single phone" class="single_phone"> -->
                 </div>
             </div>
 
@@ -91,18 +90,21 @@
 
 
         <section class="feature">
-            <div class="feature_toggle">
-                <div class="feature_button"></div>
-                <div class="feature_button"></div>
-                <div class="feature_button"></div>
+            <div class="feature_toggle_container">
+                <div class="feature_button_wrapper clearfix">
+                    <div class="feature_button feature_button_1">Macro</div>
+                    <div class="feature_button feature_button_2">Filters</div>
+                    <div class="feature_button feature_button_3">Sharing</div>
+                </div>
             </div>
 
             <div class="feature_main">
                 <div class="feature_label">
-                    <h1>Macro Photography</h1>
-                    <p>No more expensive lenses and heavy editing in Photoshop</p>
+                    <div class="feature_label_wrapper">
+                        <h1>Macro Photography.</h1>
+                        <p>No more expensive lenses and heavy editing in Photoshop</p>
+                    </div>
                 </div>
-
             </div>
 
 
@@ -114,39 +116,61 @@
 
 
         <section class="contact">
-            <div class="contact_header">
+            <div class="contact_content_wrapper">
 
-            </div>
+                <div class="contact_header">
+                    <span class="contact_header_text">Contact Us</span>
+                </div>
 
-            <p class="contact_first_paragraph">
-                If you have any questions, suggestions or want to contribute, please contact Despreneur at hi[at]desprenaur.com.
-                We'll get back to you as soon as possible.
-            </p>
-            <p class="contact_second_paragraph">
-                Here below, you can see our team which makes things happen.
-            </p>
-            <div class="profile bryan">
-                <img src="" alt="" class="bryan_profile">
-                <h1>Bryan Jones</h1>
-                <p class="bryan_description">
-                    Wannabe travel fanatic. Food buff. Internet ninja. Unapologetic web practitioner. Tvaholic. Alcohol scholar.
+                <p class="contact_first_paragraph">
+                    If you have any questions, suggestions or want to contribute, please contact Despreneur at hi[at]desprenaur.com.
+                    We'll get back to you as soon as possible.
                 </p>
-            </div>
-            <div class="profile sarah">
-                <img src="" alt="" class="sarah_profile">
-                <h1>Sarah Thompson</h1>
-                <p class="sarah_description">
-                    Infuriatingly humble student. Bacon scholar. Freelance communicator. Social media enthusiast.
-                </p>
-            </div>
 
+                <p class="contact_second_paragraph">
+                    Here below, you can see our team which makes things happen.
+                </p>
+
+                <div class="profile bryan clearfix">
+
+                    <div class="bryan_left">
+                        <img src="images/Layer 8.png" alt="bdog" class="bryan_profile">
+                    </div>
+
+                    <div class="bryan_right">
+                        <h1>Bryan Jones</h1>
+                        <p class="bryan_description">
+                            Wannabe travel fanatic. Food buff. Internet ninja. Unapologetic web practitioner. Tvaholic. Alcohol scholar.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="line"></div>
+
+                <div class="profile sarah clearfix">
+
+                    <div class="sarah_left">
+                        <img src="images/Layer 9.png" alt="sdog" class="sarah_profile">
+                    </div>
+
+                    <div class="sarah_right">
+                        <h1>Sarah Thompson</h1>
+                        <p class="sarah_description">
+                            Infuriatingly humble student. Bacon scholar. Freelance communicator. Social media enthusiast.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
 
 
         <footer>
-            <div class="copy_right_info">2013 Photography App</div>
-            <div class="footer_links">Home Press FAQ Blog Terms Privacy</div>
-            <div class="social">Instagram Twitter Facebook</div>
+            <div class="copy_right_info">&#xA9; 2013 Photography App</div>
+            <div class="footer_links">Home - Press - FAQ - Blog - Terms - Privacy</div>
+            <div class="social">Instagram - Twitter - Facebook</div>
         </footer>
 
 

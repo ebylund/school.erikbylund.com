@@ -7,10 +7,18 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: AllerBd; }
+  font-family: AllerBd;
+  color: #2e3538; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0; }
 
 .container {
-  border: 1px solid #000;
   max-width: 768px;
   margin: 0 auto; }
 
@@ -26,8 +34,6 @@ header {
     background-color: rgba(29, 28, 53, 0.67);
     text-align: center;
     position: relative; }
-    header nav:hover ul li {
-      display: block; }
     header nav .hamburger_icon {
       background-image: url("../images/hamb.svg");
       width: 50px;
@@ -35,12 +41,13 @@ header {
     header nav .hamburger_menu {
       list-style: none;
       width: 100%;
-      top: 0; }
-      header nav .hamburger_menu li {
-        display: none; }
-        header nav .hamburger_menu li a {
-          text-decoration: none;
-          color: white; }
+      top: 0;
+      display: none; }
+      header nav .hamburger_menu li a {
+        text-decoration: none;
+        color: white; }
+    header nav:hover ul {
+      display: block; }
   header .hello {
     text-align: center;
     position: relative;
@@ -102,12 +109,11 @@ header {
     width: 70%;
     margin: auto;
     height: auto;
-    text-align: center; }
-    .app .app_heading .app_header_container {
-      border: 1px solid #1d1c35; }
-      .app .app_heading .app_header_container h2 {
-        margin: 20px 0;
-        font-size: 1.75em; }
+    text-align: center;
+    overflow: auto; }
+    .app .app_heading .app_header_container h2 {
+      margin: 20px 0;
+      font-size: 1.75em; }
   .app .download_button {
     background-color: #72a329;
     text-transform: uppercase;
@@ -119,7 +125,7 @@ header {
     line-height: 80px;
     text-align: center; }
   .app .download_locations {
-    margin: auto;
+    margin: 20px auto;
     width: 50%;
     height: 100px; }
     .app .download_locations .app_store {
@@ -137,42 +143,133 @@ header {
         width: 100%; }
 
 .about {
-  border: 1px solid #000;
-  background-color: #ddd; }
+  border-bottom: 1px solid HSLA(204, 5%, 80%, 1);
+  overflow: auto; }
   .about .about_us_header {
-    border: 1px solid #000;
+    margin: 20px 0;
     width: 100%;
     text-align: center; }
-    .about .about_us_header h1 {
-      font-size: 2em; }
+    .about .about_us_header .about_us {
+      font-size: 2.5em; }
   .about .about_us_content {
     font-family: AllerRg;
-    max-height: 200px; }
+    height: 300px; }
     .about .about_us_content .about_us_content_left {
       width: 60%;
       float: left;
       max-height: 100%;
-      background-color: #aaa; }
+      position: relative; }
       .about .about_us_content .about_us_content_left p {
-        margin: 10px;
-        line-height: 30px;
+        margin: -5px 10px 0;
+        line-height: 35px;
         font-size: 1.2em; }
+      .about .about_us_content .about_us_content_left .ellipses {
+        display: block;
+        margin: 0 auto; }
     .about .about_us_content .about_us_content_right {
       width: 40%;
+      height: 100%;
       float: right;
-      background-color: #888;
-      position: relative; }
-      .about .about_us_content .about_us_content_right .single_phone {
-        max-width: 90%;
-        max-height: 100%; }
+      position: relative;
+      background-image: url("../images/single_phone.png");
+      background-position: 100% 0;
+      background-size: 80%;
+      background-repeat: no-repeat; }
 
 .feature {
-  border: 1px solid #000; }
+  overflow: auto; }
+  .feature .feature_toggle_container {
+    padding: 30px; }
+    .feature .feature_toggle_container .feature_button_wrapper {
+      border: 1px solid HSLA(204, 5%, 80%, 1);
+      border-radius: 5px; }
+      .feature .feature_toggle_container .feature_button_wrapper .feature_button {
+        font-family: AllerRg;
+        float: left;
+        border-right: 1px solid HSLA(204, 5%, 80%, 1);
+        width: 33%;
+        height: 70px;
+        font-size: 1.5em;
+        text-align: center;
+        line-height: 70px;
+        color: HSLA(204, 5%, 80%, 1); }
+        .feature .feature_toggle_container .feature_button_wrapper .feature_button:first-of-type {
+          color: white;
+          background-color: HSLA(204, 5%, 80%, 1); }
+        .feature .feature_toggle_container .feature_button_wrapper .feature_button:last-of-type {
+          border: none; }
+  .feature .feature_main {
+    position: relative;
+    background-image: url("../images/Macro photo.png");
+    background-size: cover;
+    background-position: 50% 0;
+    height: 400px;
+    color: white; }
+    .feature .feature_main .feature_label {
+      background-color: rgba(29, 28, 53, 0.67);
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      overflow: auto; }
+      .feature .feature_main .feature_label .feature_label_wrapper {
+        width: 70%;
+        margin: auto; }
+        .feature .feature_main .feature_label .feature_label_wrapper h1 {
+          font-size: 2.5em; }
+        .feature .feature_main .feature_label .feature_label_wrapper p {
+          font-family: AllerRg;
+          font-size: 1.75em; }
 
 .contact {
-  border: 1px solid #000; }
+  overflow: auto; }
+  .contact .contact_content_wrapper {
+    margin: 0 40px;
+    font-family: AllerRg; }
+    .contact .contact_content_wrapper p {
+      line-height: 25px; }
+    .contact .contact_content_wrapper .contact_header {
+      margin: 20px 0;
+      width: 100%;
+      text-align: center; }
+      .contact .contact_content_wrapper .contact_header .contact_header_text {
+        font-size: 2.5em; }
+    .contact .contact_content_wrapper .profile {
+      margin: 40px 0; }
+    .contact .contact_content_wrapper .bryan .bryan_left {
+      width: 40%;
+      box-sizing: border-box;
+      float: left; }
+    .contact .contact_content_wrapper .bryan .bryan_right {
+      margin-left: 40%;
+      box-sizing: border-box; }
+      .contact .contact_content_wrapper .bryan .bryan_right h1 {
+        margin: 0; }
+    .contact .contact_content_wrapper .line {
+      border-top: solid 1px HSLA(204, 5%, 80%, 1); }
+    .contact .contact_content_wrapper .sarah .sarah_left {
+      width: 40%;
+      box-sizing: border-box;
+      float: left; }
+    .contact .contact_content_wrapper .sarah .sarah_right {
+      margin-left: 40%;
+      box-sizing: border-box; }
+      .contact .contact_content_wrapper .sarah .sarah_right h1 {
+        margin: 0; }
 
 footer {
-  border: 1px solid #000; }
+  font-family: AllerRg;
+  text-align: center;
+  border-top: 1px solid HSLA(204, 5%, 80%, 1);
+  overflow: auto; }
+  footer .copy_right_info {
+    font-size: 1.75em;
+    margin: 15px; }
+  footer .footer_links {
+    color: HSLA(204, 5%, 80%, 1);
+    margin-bottom: 15px; }
+  footer .social {
+    color: HSLA(204, 5%, 80%, 1);
+    margin-bottom: 15px; }
 
 /*# sourceMappingURL=style.css.map */

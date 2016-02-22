@@ -5,6 +5,7 @@ $accent-blue-alpha: 67%;
 
 $accent-blue: hsla($accent-blue-hue, $accent-blue-saturation, $accent-blue-lightness, $accent-blue-alpha);
 $rgba-blue: rgba($accent-blue, .67);
+$accent-grey: HSLA(204, 5%, 80%, 1);
 
 @font-face {
 	font-family: AllerBd;
@@ -20,12 +21,23 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: AllerBd;
+	color: hsla(197, 10%, 20%, 1);
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size:0;
+	content: "";
+	clear: both;
+	height: 0;
 }
 
 .container{
-	border: 1px solid #000;
+	// border: 1px solid #000;
 	max-width: 768px;
 	margin: 0 auto;
+
 }
 
 header {
@@ -41,9 +53,8 @@ header {
 		background-color: $rgba-blue;
 		text-align: center;
 		position: relative;
-		&:hover ul li{
-			display: block;
-		}
+
+
 		.hamburger_icon {
 			background-image: url('../images/hamb.svg');
 			width: 50px;
@@ -54,20 +65,22 @@ header {
 
 			list-style: none;
 			// position: absolute;
-			// background-color: $rgba-blue;
 			width: 100%;
 			top: 0;
+			display: none;
 
 			li {
-				display: none;
 				a {
 					text-decoration: none;
 					color: white;
 				}
-
 			}
-
 		}
+
+		&:hover ul{
+			display: block;
+		}
+
 	}
 	.hello {
 		text-align: center;
@@ -179,10 +192,11 @@ header {
 		height: auto;
 		// border: 1px solid white;
 		text-align: center;
+		overflow: auto;
 		// padding-top: 10%;
 
 		.app_header_container {
-			border: 1px solid $accent-blue;
+			// border: 1px solid $accent-blue;
 			// height: 200px;
 
 			h2 {
@@ -207,7 +221,7 @@ header {
 
 	.download_locations {
 		// border: 1px solid white;
-		margin: auto;
+		margin: 20px auto;
 		width:50%;
 		height: 100px;
 
@@ -240,63 +254,263 @@ header {
 }
 
 .about {
-	border: 1px solid #000;
-	background-color: #ddd;
+	border-bottom: 1px solid $accent-grey;
+	// background-color: #ddd;
+	overflow: auto;
 	.about_us_header {
-		border: 1px solid #000;
+		// border: 1px solid #000;
+		margin: 20px 0;
 		width: 100%;
 		text-align: center;
-		h1 {
-			font-size: 2em;
+		.about_us {
+			font-size: 2.5em;
 		}
 
 	}
 
 	.about_us_content {
 		font-family: AllerRg;
-		max-height: 200px;
+		height: 300px;
+
 		.about_us_content_left {
 			width: 60%;
 			float: left;
 			max-height: 100%;
-			background-color: #aaa;
+			position: relative;
+			// background-color: #aaa;
 			p {
-				margin: 10px;
-				line-height: 30px;
+				margin: -5px 10px 0;
+				line-height: 35px;
 				font-size: 1.2em;
 			}
 
+			.ellipses {
+				display: block;
+				margin: 0 auto;
+				// text-align: center;
+			}
 		}
 
 		.about_us_content_right {
 			width: 40%;
+			height: 100%;
 			float: right;
 			// max-height: 100%;
-			background-color: #888;
+			// background-color: #888;
 			position: relative;
+			background-image: url("../images/single_phone.png");
+			background-position: 100% 0;
+			background-size: 80%;
+			background-repeat: no-repeat;
+
 			.single_phone {
+				// background-image: url("../images/single_phone.png");
 				// position: absolute;
-				max-width: 90%;
-				max-height: 100%;
+				// top:0;
+				// right:0;
+				// max-width: 90%;
+				// max-height: 100%;
+			}
+		}
+	}
+}
+
+.feature {
+	overflow: auto;
+
+	.feature_toggle_container {
+		// display: inline-block;
+		padding: 30px;
+		.feature_button_wrapper {
+			border: 1px solid $accent-grey;
+			border-radius: 5px;
+
+			.feature_button {
+				font-family: AllerRg;
+				float: left;
+				border-right: 1px solid $accent-grey;
+				width: 33%;
+				height: 70px;
+				font-size: 1.5em;
+				text-align: center;
+				line-height: 70px;
+				color: $accent-grey;
+				&:first-of-type {
+					color: white;
+					background-color: $accent-grey;
+				}
+
+				&:last-of-type {
+					border: none;
+				}
+			}
+		}
+	}
+
+	.feature_main {
+		position: relative;
+		background-image: url("../images/Macro photo.png");
+		background-size:cover;
+		background-position: 50% 0;
+		height: 400px;
+		color: white;
+
+
+			.feature_label {
+				// height: 40%;
+				background-color: $rgba-blue;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				text-align: center;
+				overflow: auto;
+				.feature_label_wrapper {
+					width: 70%;
+					margin: auto;
+					// border: 1px solid red;
+
+					h1 {
+						font-size: 2.5em;
+
+					}
+
+					p {
+						font-family: AllerRg;
+						font-size: 1.75em;
+					}
+				}
+
+			}
+	}
+}
+
+.contact {
+	overflow: auto;
+	& p {
+		// font-size: .9em;
+	}
+
+	.contact_content_wrapper {
+		margin: 0 40px;
+		font-family: AllerRg;
+		& p {
+			line-height: 25px;
+		}
+		.contact_header {
+			// border: 1px solid #000;
+			margin: 20px 0;
+			width: 100%;
+			text-align: center;
+			.contact_header_text {
+				font-size: 2.5em;
 			}
 
 		}
 
+		.profile {
+			// text-align: center;
+			// border: 1px solid #000;
+			margin: 40px 0;
+
+
+			h1 {
+				// font-size: 2.5em;
+			}
+
+			p {
+				// font-size: .9em;
+			}
+
+
+
+
+		}
+
+		.bryan {
+			// border-bottom: solid 1px $accent-grey;
+
+			.bryan_left {
+				width: 40%;
+				box-sizing: border-box;
+				// border: 1px solid red;
+				float: left;
+				img {
+
+				}
+			}
+
+			.bryan_right {
+				margin-left: 40%;
+				box-sizing: border-box;
+				// border: 1px solid red;
+				// float: right;
+
+				h1 {
+					margin: 0;
+				}
+
+				p {
+
+				}
+
+			}
+
+		}
+
+		.line {
+			border-top: solid 1px $accent-grey
+		}
+
+		.sarah {
+			.sarah_left {
+				width: 40%;
+				box-sizing: border-box;
+				// border: 1px solid red;
+				float: left;
+				img {
+
+				}
+
+			}
+
+			.sarah_right {
+				margin-left: 40%;
+				box-sizing: border-box;
+				// border: 1px solid red;
+				// float: right;
+
+				h1 {
+					margin: 0;
+				}
+
+				p {
+
+				}
+
+			}
+		}
 	}
-
-}
-
-.feature {
-	border: 1px solid #000;
-
-}
-
-.contact {
-	border: 1px solid #000;
-
 }
 
 footer {
-	border: 1px solid #000;
+	font-family: AllerRg;
+	text-align: center;
+	border-top: 1px solid $accent-grey;
+	overflow: auto;
+	// line-height: 25px;
+	.copy_right_info {
+		font-size: 1.75em;
+		margin: 15px;
+	}
+	.footer_links {
+		color: $accent-grey;
+		margin-bottom: 15px;
 
+	}
+
+	.social {
+		color: $accent-grey;
+		margin-bottom: 15px;
+
+	}
 }
