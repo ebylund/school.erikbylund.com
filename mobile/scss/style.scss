@@ -62,17 +62,28 @@ header {
 		}
 
 		.hamburger_menu { // this is a ul element
-
+			// border: 1px solid #000;
+			z-index: 1;
 			list-style: none;
-			// position: absolute;
+			position: absolute;
 			width: 100%;
-			top: 0;
+			top: 38px;
 			display: none;
 
 			li {
+				// border: 1px solid red;
+				height: 50px;
+				line-height: 50px;
+				background-color: $rgba-blue;
+				position: relative;
+				left: -40px;
 				a {
 					text-decoration: none;
 					color: white;
+				}
+				&:hover {
+					background-color: rgba($accent-blue, .8);
+					display: block;
 				}
 			}
 		}

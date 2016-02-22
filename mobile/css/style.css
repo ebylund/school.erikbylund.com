@@ -39,13 +39,24 @@ header {
       width: 50px;
       height: 50px; }
     header nav .hamburger_menu {
+      z-index: 1;
       list-style: none;
+      position: absolute;
       width: 100%;
-      top: 0;
+      top: 38px;
       display: none; }
-      header nav .hamburger_menu li a {
-        text-decoration: none;
-        color: white; }
+      header nav .hamburger_menu li {
+        height: 50px;
+        line-height: 50px;
+        background-color: rgba(29, 28, 53, 0.67);
+        position: relative;
+        left: -40px; }
+        header nav .hamburger_menu li a {
+          text-decoration: none;
+          color: white; }
+        header nav .hamburger_menu li:hover {
+          background-color: rgba(29, 28, 53, 0.8);
+          display: block; }
     header nav:hover ul {
       display: block; }
   header .hello {
