@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My title stuffy</title>
+    <style>
+
+    body {
+        margin: 0;
+    }
+
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: "";
+        clear: both;
+        height: 0;
+    }
+
+    .box {
+        box-sizing: border-box;
+        height: 200px;
+        width: 100%;
+        font-size: calc(100% + 2vw);
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .outerBox {
+        height: 33vh;
+        width: 100%;
+    }
+
+
+    .one {
+        background-color: HSLA(200, 75%, 87%, 1);
+        height: 33vh;
+
+    }
+
+    .two {
+        background-color: HSLA(250, 75%, 87%, 1);
+        float: left;
+        max-width: 50%;
+        height: inherit;
+
+    }
+
+    .three {
+        background-color: HSLA(300, 75%, 87%, 1);
+        float:right;
+        max-width: 50%;
+        height: inherit;
+    }
+
+    .four {
+        background-color: HSLA(350, 75%, 87%, 1);
+        height: 34vh;
+    }
+
+    .text {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translateX(50%) translateY(50%);
+    }
+
+    @media only screen and (max-width: 768px) {
+        .one {
+            height: 25vh;
+
+        }
+
+        .outerBox {
+            /*display: none;*/
+            height: 50vh;
+        }
+
+        .two {
+            float: none;
+            max-width: 100%;
+            height: 25vh;
+            display: block;
+        }
+
+        .three {
+            float: none;
+            max-width: 100%;
+            height: 25vh;
+            display: block;
+
+        }
+
+        .four {
+            height: 25vh;
+
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box one"><span class="text text1">Div 1</span></div>
+
+    <div class="outerBox">
+        <div class="box two"><span class="text text2">Div 2</span></div>
+        <div class="box three"><span class="text text3">Div 3</span></div>
+    </div>
+
+    <div class="box four"><span class="text text4">Div 4</span></div>
+
+</body>
+
+</html>
