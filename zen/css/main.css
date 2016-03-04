@@ -1,0 +1,96 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: Raleway;
+  src: url(https://fonts.googleapis.com/css?family=Raleway:300); }
+.page-wrapper {
+  font-family: Raleway; }
+  .page-wrapper .intro header {
+    background-image: url("../images/green_1440.png");
+    background-size: cover;
+    background-position: 60% 50%;
+    height: 85vh;
+    position: relative; }
+    .page-wrapper .intro header h1 {
+      color: HSLA(171, 27%, 37%, 1);
+      font-size: 3em;
+      text-align: center;
+      position: relative;
+      top: 50px; }
+    .page-wrapper .intro header h2 {
+      color: HSLA(171, 27%, 37%, 1);
+      font-size: 1.5em;
+      text-align: center;
+      position: relative;
+      top: 50px; }
+  .page-wrapper .intro .summary {
+    background-color: HSLA(169, 44%, 64%, 1);
+    position: relative;
+    height: 15vh; }
+    .page-wrapper .intro .summary p:first-of-type {
+      color: HSLA(171, 27%, 37%, 1);
+      width: 40%;
+      top: -165px;
+      margin-left: 15px;
+      font-size: 18px;
+      position: absolute; }
+    .page-wrapper .intro .summary p:last-of-type {
+      color: HSLA(60, 100%, 100%, 1);
+      position: absolute;
+      bottom: 30%;
+      left: 50%;
+      width: 300px;
+      transform: translateX(-50%);
+      font-size: 22px;
+      text-transform: uppercase;
+      text-align: center; }
+      .page-wrapper .intro .summary p:last-of-type > a:link {
+        text-decoration: none;
+        color: HSLA(171, 27%, 37%, 1); }
+  @media screen and (min-width: 768px) {
+    .page-wrapper .intro .summary p:first-of-type {
+      width: 50%;
+      font-size: 22px; } }
+
+/*# sourceMappingURL=main.css.map */

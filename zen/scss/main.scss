@@ -1,0 +1,87 @@
+@import 'reset';
+
+@font-face {
+    font-family: Raleway;
+    src: url(https://fonts.googleapis.com/css?family=Raleway:300);
+}
+
+$dark-green: HSLA(171, 27%, 37%, 1);
+$light-green: HSLA(169, 44%, 64%, 1);
+$light: HSLA(60, 100%, 100%, 1);
+
+
+.page-wrapper {
+    font-family: Raleway;
+    .intro {
+
+        header {
+            background-image: url("../images/green_1440.png");
+            background-size: cover;
+            // background-position: center;
+            background-position: 60% 50%;
+            height: 85vh;
+            position: relative;
+            // padding-top: 50px;
+
+
+            h1 {
+                color: $dark-green;
+                font-size: 3em;
+                text-align: center;
+                position: relative;
+                top: 50px;
+            }
+
+            h2 {
+                color: $dark-green;
+                font-size: 1.5em;
+                text-align: center;
+                position: relative;
+                top: 50px;
+            }
+        }
+
+        .summary {
+            background-color: $light-green;
+            position: relative;
+            height: 15vh;
+            p:first-of-type {
+                color: $dark-green;
+                width: 40%;
+                top: -165px;
+                margin-left: 15px;
+                font-size: 18px;
+                position: absolute;
+            }
+
+            p:last-of-type {
+                color: $light;
+                position: absolute;
+                bottom: 30%;
+                left: 50%;
+                width: 300px;
+                transform: translateX(-50%);
+                font-size: 22px;
+                text-transform: uppercase;
+                text-align: center;
+                & > a:link {
+                    text-decoration: none;
+                    color: $dark-green;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .intro {
+            .summary {
+                p:first-of-type {
+                    width: 50%;
+                    font-size: 22px;
+                }
+
+                p:last-of-type {
+                }
+            }
+        }
+    }
+}
