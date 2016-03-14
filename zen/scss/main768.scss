@@ -1,0 +1,86 @@
+@media screen and (min-width: 768px) {
+    .intro {
+        header {
+
+            h1 {
+                font-size: 6em;
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+
+        }
+        .summary {
+            p:first-of-type {
+                width: 50%;
+                font-size: 22px;
+                margin-left: 25px;
+                top: -140px;
+            }
+
+            p:last-of-type {
+            }
+        }
+        .preamble {
+            h3 {
+                font-size: 3.5em;
+
+            }
+            p {
+                width: 600px;
+            }
+        }
+    }
+    .main {
+        .explanation {
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: center;
+            h3 {
+                width: 100%;
+
+            }
+
+            p {
+                // flex:1 0 auto;
+                width: 350px;
+
+            }
+        }
+        .participation {
+
+            h3 {
+            }
+
+            p {
+                width: 600px;
+
+
+            }
+        }
+
+        .benefits {
+            background-size: cover;
+            h3 {
+
+            }
+
+            p {
+                width: 600px;
+            }
+
+        }
+
+        .requirements {
+            h3 {
+
+            }
+
+            p {
+                width: 600px;
+
+            }
+        }
+    }
+}

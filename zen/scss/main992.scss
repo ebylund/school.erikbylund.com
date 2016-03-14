@@ -1,0 +1,152 @@
+@media screen and (min-width: 992px) {
+    .intro{
+        .summary {
+            p:first-of-type {
+                top: -125px;
+                width: 502px;
+                margin-left: 10%;
+            }
+        }
+        .preamble {
+            background-image: url(../images/world_map_pink.svg);
+            background-size: 100%;
+            background-position: 50% 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            h3 {
+                width: 100%;
+            }
+            p {
+                // flex-grow: 1;
+                width: 300px;
+            }
+            p:last-of-type {
+                margin: 20px auto;
+
+            }
+        }
+    }
+    .main {
+        .explanation {
+            h3 {
+
+            }
+
+            p {
+                width: 450px;
+
+            }
+        }
+
+        .participation {
+            display: flex;
+            flex-wrap: wrap;
+
+            h3 {
+                width: 100%;
+            }
+
+            p {
+                width: 260px;
+                border-top: none;
+                padding-top: 0;
+
+                &:first-of-type {
+                }
+                &:first-child {
+                    // order: 2;
+                    // width: 100%;
+
+                }
+                &:last-child {
+                    // order: 3;
+                }
+                &:nth-child(2) {
+                    // order: 1;
+                }
+
+
+            }
+        }
+
+        .benefits {
+            h3 {
+
+            }
+             p {
+                 width: 960px;
+
+             }
+        }
+
+
+        .requirements {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            h3 {
+                width: 100%;
+
+            }
+
+            p {
+                border-top: none;
+                padding-top: 0;
+
+                width: 30%;
+
+            }
+        }
+    }
+
+    aside {
+        .wrapper {
+            .design-selection {
+                h3 {
+
+                }
+
+                nav {
+                    ul {
+                        li {
+
+                        }
+                    }
+                }
+            }
+
+            .design-archives {
+                h3 {
+
+                }
+
+                nav {
+                    ul {
+                        li {
+                            a {
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .zen-resources {
+                h3 {
+
+                }
+
+                ul {
+                    li {
+                        a {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

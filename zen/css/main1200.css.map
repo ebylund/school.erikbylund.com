@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qCAAsC;EAY1B,kBAAE;IACE,KAAK,EAAE,KAAK;;EAWhB,oBAAE;IACE,KAAK,EAAE,KAAK;EAKhB,sBAAE;IACE,KAAK,EAAE,KAAK;EAIpB,mBAAc;IACV,cAAc,EAAE,GAAG;IAMnB,qBAAE;MACE,KAAK,EAAE,KAAK",
+"sources": ["../scss/main1200.scss"],
+"names": [],
+"file": "main1200.css"
+}

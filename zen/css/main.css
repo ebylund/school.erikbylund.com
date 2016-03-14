@@ -43,33 +43,52 @@ table {
 
 @font-face {
   font-family: Raleway;
-  src: url(https://fonts.googleapis.com/css?family=Raleway:300); }
+  src: url(https://fonts.googleapis.com/css?family=Raleway:400,300); }
 .page-wrapper {
-  font-family: Raleway; }
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 30px; }
+  .page-wrapper h3 {
+    text-align: center;
+    line-height: 1;
+    margin: 25px auto;
+    font-size: 3em; }
   .page-wrapper .intro header {
+    line-height: 1;
     background-image: url("../images/green_1440.png");
     background-size: cover;
     background-position: 60% 50%;
     height: 85vh;
-    position: relative; }
+    position: relative;
+    text-align: center; }
     .page-wrapper .intro header h1 {
+      font-weight: 300;
       color: HSLA(171, 27%, 37%, 1);
-      font-size: 3em;
+      font-size: 12vw;
       text-align: center;
       position: relative;
-      top: 50px; }
+      top: 30px; }
     .page-wrapper .intro header h2 {
+      font-weight: 300;
       color: HSLA(171, 27%, 37%, 1);
-      font-size: 1.5em;
+      font-size: 5vw;
       text-align: center;
       position: relative;
-      top: 50px; }
+      top: 35px;
+      display: inline-block;
+      padding: 0 8vw 25px;
+      border-bottom: solid HSLA(0, 0%, 100%, 0.5) 1px; }
   .page-wrapper .intro .summary {
     background-color: HSLA(169, 44%, 64%, 1);
+    background-image: url(../images/arrows.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
-    height: 15vh; }
+    height: 15vh;
+    line-height: 1; }
     .page-wrapper .intro .summary p:first-of-type {
       color: HSLA(171, 27%, 37%, 1);
+      font-weight: 300;
       width: 40%;
       top: -165px;
       margin-left: 15px;
@@ -78,19 +97,171 @@ table {
     .page-wrapper .intro .summary p:last-of-type {
       color: HSLA(60, 100%, 100%, 1);
       position: absolute;
-      bottom: 30%;
+      bottom: 35%;
       left: 50%;
       width: 300px;
       transform: translateX(-50%);
       font-size: 22px;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      visibility: hidden; }
       .page-wrapper .intro .summary p:last-of-type > a:link {
         text-decoration: none;
         color: HSLA(171, 27%, 37%, 1); }
+  .page-wrapper .intro .preamble {
+    background-color: HSLA(346, 81%, 97%, 1);
+    color: HSLA(346, 81%, 64%, 1);
+    overflow: auto;
+    background-image: url(../images/world_map.svg), url(../images/lightbulb.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 75%, 50% 70%;
+    background-size: 500px, 150px; }
+    .page-wrapper .intro .preamble h3 {
+      padding: 0 20px; }
+    .page-wrapper .intro .preamble p {
+      margin: 20px auto;
+      width: 360px; }
+    .page-wrapper .intro .preamble p:last-of-type {
+      margin-top: 200px; }
+  .page-wrapper .main .explanation {
+    overflow: auto;
+    background-image: url(../images/sunrise-phu-quoc-island-ocean_1440_black.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-weight: 300; }
+    .page-wrapper .main .explanation p {
+      margin: 20px auto;
+      width: 360px; }
+  .page-wrapper .main .participation {
+    background-color: HSLA(253, 23%, 94%, 1);
+    overflow: auto;
+    color: HSLA(253, 23%, 35%, 1); }
+    .page-wrapper .main .participation h3:after {
+      content: " !!!"; }
+    .page-wrapper .main .participation p {
+      margin: 20px auto;
+      width: 360px;
+      border-top: dotted 1px HSLA(253, 23%, 35%, 1);
+      padding-top: 25px; }
+  .page-wrapper .main .benefits {
+    color: HSLA(171, 27%, 37%, 1);
+    background-color: HSLA(171, 27%, 95%, 1);
+    overflow: auto;
+    background-image: url(../images/manipura.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 150%; }
+    .page-wrapper .main .benefits p {
+      width: 360px;
+      margin: 20px auto; }
+      .page-wrapper .main .benefits p:first-of-type {
+        border-top: dotted 1px HSLA(171, 27%, 37%, 1);
+        padding-top: 25px; }
+  .page-wrapper .main .requirements {
+    color: HSLA(351, 25%, 45%, 1);
+    overflow: auto;
+    background-color: HSLA(351, 25%, 95%, 1); }
+    .page-wrapper .main .requirements p {
+      width: 360px;
+      margin: 20px auto;
+      border-top: dotted 1px HSLA(351, 25%, 45%, 1);
+      padding-top: 25px; }
+  .page-wrapper .main footer {
+    background-color: HSLA(253, 23%, 94%, 1);
+    text-align: center;
+    min-height: 70px; }
+    .page-wrapper .main footer a {
+      color: HSLA(253, 23%, 35%, 1);
+      text-decoration: none;
+      display: inline-block;
+      width: 18%;
+      line-height: 70px; }
+      .page-wrapper .main footer a:hover {
+        background-color: HSLA(253, 23%, 85%, 1); }
+  .page-wrapper aside {
+    display: none; }
   @media screen and (min-width: 768px) {
+    .page-wrapper .intro header h1 {
+      font-size: 6em; }
+    .page-wrapper .intro header h2 {
+      font-size: 2.5em; }
     .page-wrapper .intro .summary p:first-of-type {
       width: 50%;
-      font-size: 22px; } }
+      font-size: 22px;
+      margin-left: 25px;
+      top: -140px; }
+    .page-wrapper .intro .preamble h3 {
+      font-size: 3.5em; }
+    .page-wrapper .intro .preamble p {
+      width: 600px; }
+    .page-wrapper .main .explanation {
+      display: flex;
+      flex-wrap: wrap; }
+      .page-wrapper .main .explanation h3 {
+        width: 100%; }
+      .page-wrapper .main .explanation p {
+        width: 350px; }
+    .page-wrapper .main .participation p {
+      width: 600px; }
+    .page-wrapper .main .benefits {
+      background-size: cover; }
+      .page-wrapper .main .benefits p {
+        width: 600px; }
+    .page-wrapper .main .requirements p {
+      width: 600px; } }
+  @media screen and (min-width: 992px) {
+    .page-wrapper .intro .summary p:first-of-type {
+      top: -125px;
+      width: 502px;
+      margin-left: 10%; }
+    .page-wrapper .intro .preamble {
+      background-image: url(../images/world_map_pink.svg);
+      background-size: 100%;
+      background-position: 50% 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .page-wrapper .intro .preamble h3 {
+        width: 100%; }
+      .page-wrapper .intro .preamble p {
+        width: 300px; }
+      .page-wrapper .intro .preamble p:last-of-type {
+        margin: 20px auto; }
+    .page-wrapper .main .explanation p {
+      width: 450px; }
+    .page-wrapper .main .participation {
+      display: flex;
+      flex-wrap: wrap; }
+      .page-wrapper .main .participation h3 {
+        width: 100%; }
+      .page-wrapper .main .participation p {
+        width: 260px;
+        border-top: none;
+        padding-top: 0; }
+    .page-wrapper .main .benefits p {
+      width: 960px; }
+    .page-wrapper .main .requirements {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      .page-wrapper .main .requirements h3 {
+        width: 100%; }
+      .page-wrapper .main .requirements p {
+        border-top: none;
+        padding-top: 0;
+        width: 30%; } }
+  @media screen and (min-width: 1200px) {
+    .page-wrapper .intro .preamble p {
+      width: 375px; }
+    .page-wrapper .main .explanation p {
+      width: 550px; }
+    .page-wrapper .main .participation p {
+      width: 360px; }
+    .page-wrapper .main .requirements {
+      flex-direction: row; }
+      .page-wrapper .main .requirements p {
+        width: 360px; } }
 
 /*# sourceMappingURL=main.css.map */

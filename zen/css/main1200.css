@@ -1,0 +1,14 @@
+@media screen and (min-width: 1200px) {
+  .intro .preamble p {
+    width: 375px; }
+
+  .main .explanation p {
+    width: 550px; }
+  .main .participation p {
+    width: 360px; }
+  .main .requirements {
+    flex-direction: row; }
+    .main .requirements p {
+      width: 360px; } }
+
+/*# sourceMappingURL=main1200.css.map */

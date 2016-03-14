@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+  .intro header h1 {
+    font-size: 6em; }
+  .intro header h2 {
+    font-size: 2.5em; }
+  .intro .summary p:first-of-type {
+    width: 50%;
+    font-size: 22px;
+    margin-left: 25px;
+    top: -140px; }
+  .intro .preamble h3 {
+    font-size: 3.5em; }
+  .intro .preamble p {
+    width: 600px; }
+
+  .main .explanation {
+    display: flex;
+    flex-wrap: wrap; }
+    .main .explanation h3 {
+      width: 100%; }
+    .main .explanation p {
+      width: 350px; }
+  .main .participation p {
+    width: 600px; }
+  .main .benefits {
+    background-size: cover; }
+    .main .benefits p {
+      width: 600px; }
+  .main .requirements p {
+    width: 600px; } }
+
+/*# sourceMappingURL=main768.css.map */

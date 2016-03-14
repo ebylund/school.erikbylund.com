@@ -1,0 +1,45 @@
+@media screen and (min-width: 992px) {
+  .intro .summary p:first-of-type {
+    top: -125px;
+    width: 502px;
+    margin-left: 10%; }
+  .intro .preamble {
+    background-image: url(../images/world_map_pink.svg);
+    background-size: 100%;
+    background-position: 50% 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .intro .preamble h3 {
+      width: 100%; }
+    .intro .preamble p {
+      width: 300px; }
+    .intro .preamble p:last-of-type {
+      margin: 20px auto; }
+
+  .main .explanation p {
+    width: 450px; }
+  .main .participation {
+    display: flex;
+    flex-wrap: wrap; }
+    .main .participation h3 {
+      width: 100%; }
+    .main .participation p {
+      width: 260px;
+      border-top: none;
+      padding-top: 0; }
+  .main .benefits p {
+    width: 960px; }
+  .main .requirements {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .main .requirements h3 {
+      width: 100%; }
+    .main .requirements p {
+      border-top: none;
+      padding-top: 0;
+      width: 30%; } }
+
+/*# sourceMappingURL=main992.css.map */

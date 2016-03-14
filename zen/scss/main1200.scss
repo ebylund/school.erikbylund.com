@@ -1,0 +1,50 @@
+@media screen and (min-width: 1200px) {
+    .intro{
+        .summary {
+            p:first-of-type {
+                // top: -100px;
+            }
+        }
+        .preamble {
+            h3 {
+
+            }
+
+            p {
+                width: 375px;
+
+            }
+        }
+    }
+    .main {
+        .explanation {
+            h3 {
+
+            }
+
+            p {
+                width: 550px;
+
+            }
+        }
+        .participation {
+            p {
+                width: 360px;
+            }
+        }
+
+        .requirements {
+            flex-direction: row;
+            h3 {
+
+
+            }
+
+            p {
+                width: 360px;
+
+            }
+        }
+    }
+
+}
