@@ -1,0 +1,111 @@
+// .contact_form {
+//     border: 1px solid #000;
+//     width: 960px;
+//     margin: 0 auto;
+//     text-align: center;
+//     input {
+//         margin: 20px auto;
+//         width: 500px;
+//         display: block;
+//         &[type=color] {
+//             width: 200px;
+//         }
+//         &[type=button] {
+//             width: initial;
+//         }
+//     }
+// }
+.contact_form{
+    // font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: hsla(0, 0%, 98%, 1);
+
+    position: relative;
+    top: 50%;
+    transform: translateY(30%);
+    // transform: translateY(-50%);
+    h3 {
+        margin: 10px 0 20px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    h6 {
+        margin: 5px 0;
+        text-align: right;
+        color: #555;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select
+    {
+        // -webkit-transition: all 1s ease-in-out;
+        // -moz-transition: all 1s ease-in-out;
+        // -ms-transition: all 1s ease-in-out;
+        // -o-transition: all 1s ease-in-out;
+        outline: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        background: hsla(0, 0%, 95%, 1);
+        margin-bottom: 4%;
+        border: 1px solid #ccc;
+        padding: 3%;
+        color: #555;
+        font: 120% Raleway, Helvetica, sans-serif;
+        border-radius: 5px;
+        height: 60px;
+    }
+
+    textarea {
+        height: 150px;
+        max-width: 100%;
+    }
+    input[type="text"]:focus,
+    input[type="date"]:focus,
+    input[type="datetime"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="search"]:focus,
+    input[type="time"]:focus,
+    input[type="url"]:focus,
+    textarea:focus,
+    select:focus
+    {
+        box-shadow: 0 0 3px #43D1AF;
+        padding: 3%;
+        border: 1px solid #43D1AF;
+        background: hsla(0, 0%, 99%, 1);
+    }
+
+    input[type="submit"],
+    input[type="button"]{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        padding: 3%;
+        background: #43D1AF;
+        border-bottom: 2px solid #30C29E;
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none;
+        color: #fff;
+        font-size: 1.5em;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover,
+    input[type="button"]:hover{
+        background: #2EBC99;
+    }
+}

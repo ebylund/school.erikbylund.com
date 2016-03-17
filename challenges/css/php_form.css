@@ -9,6 +9,12 @@ body {
   font-family: Raleway;
   background-color: #f2f2f2; }
 
+.title {
+  margin: 90px;
+  text-align: center;
+  font-size: 6em;
+  color: #171717; }
+
 h2 {
   text-align: center;
   font-size: 5em;
