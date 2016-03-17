@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#paint {
+  width: 80vw;
+  height: 50vh;
+  margin: 40px auto 0;
+  background-color: grey;
+  border: solid 2px black; }
+
+nav {
+  background-color: #cb756c; }
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px; }
+
+/*# sourceMappingURL=php_form.css.map */
