@@ -1,19 +1,48 @@
+@font-face {
+  font-family: Raleway;
+  src: url(https://fonts.googleapis.com/css?family=Raleway:300); }
 * {
   margin: 0;
   padding: 0; }
 
+body {
+  font-family: Raleway;
+  background-color: #f2f2f2; }
+
+h2 {
+  text-align: center;
+  font-size: 5em;
+  margin: 20px;
+  text-decoration: underline;
+  color: #cb756c; }
+
+h5 {
+  text-align: center;
+  font-size: 3em;
+  margin: 20px;
+  color: #cb756c; }
+
 #paint {
   width: 80vw;
   height: 50vh;
-  margin: 40px auto 0;
-  background-color: grey;
+  margin: 0 auto;
+  background-color: #dedede;
   border: solid 2px black; }
 
 nav {
   background-color: #cb756c; }
-  nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 20px; }
+  nav ul {
+    display: block;
+    text-align: center; }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 20px; }
+      nav ul li a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #f0f0f0; }
+        nav ul li a:hover {
+          color: white; }
 
 /*# sourceMappingURL=php_form.css.map */

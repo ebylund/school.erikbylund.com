@@ -16,7 +16,7 @@ canvas.addEventListener('mousemove', function(e) {
 ctx.lineWidth = 3;
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
-ctx.strokeStyle = '#00CC99';
+ctx.strokeStyle = '#D98A80'
 
 canvas.addEventListener('mousedown', function(e) {
     ctx.beginPath();
