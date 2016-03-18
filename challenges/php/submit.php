@@ -4,10 +4,13 @@
         $comments = $_POST['comments'];
         $errors = [];
         $welcome = "Thanks for giving up your information so freely, I promise to not make too of a profit from selling it";
-        mail($email, 'whats up player' . $name, $welcome . "\n\nYour comments: ". $comments);
+        $wasSent = mail($email, 'whats up player' . $name, $welcome . "\n\nYour comments: ". $comments);
     ?>
-
+    <?php if($wasSent): ?>
     <h1>Success!</h1>
+    <?php else: ?>
+    <h1>Failed to send!</h1>
+    <?php endif ?>
     <h3><?=$name?></h3>
     <h3><?=$email?></h3>
     <h3><?=$comments?></h3>
