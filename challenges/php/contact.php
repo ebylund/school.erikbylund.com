@@ -8,21 +8,16 @@
 </head>
 <body>
     <?php include("nav.php"); ?>
-    <!-- <h1 class="title">
-        Contact
-    </h1> -->
-    <!-- <form class="contact_form" action="index.html" method="post">
-        <input type="color" name="name" value="#444444">
-        <input type="text" name="name" value="">
-        <input type="button" name="name" value="Submit">
-    </form> -->
+
     <div class="contact_form">
         <h3>Give us your info</h3>
-        <form type="post">
-            <input type="text" name="name" placeholder="Your Namew ***" />
-            <input type="email" name="email" placeholder="Email Waddress ***" />
+        <form action="submit.php" method="post">
+            <input type="text" name="name" placeholder="Your Namew ***" required/>
+            <input type="email" name="email" placeholder="Email Waddress ***" required />
             <textarea name="comments" placeholder="Type your Message"></textarea>
             <input type="submit" value="Send" />
         </form>
         <h6>*** We might sell your info</h6>
     </div>
+</body>
+</html>
