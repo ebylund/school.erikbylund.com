@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F3F3F3; }
+
+#svg {
+  border: 1px solid #000;
+  width: 100%;
+  height: 100vh; }
+
+.test {
+  min-height: 300px;
+  background-color: #aaa; }
+
+/*# sourceMappingURL=main.css.map */
