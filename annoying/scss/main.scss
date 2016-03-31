@@ -1,0 +1,43 @@
+
+$red: #E26E6E;
+$orange: #E2B46E;
+$light_green: #CBE26E;
+$green: #86E26E;
+$teal: #6EE29D;
+$turquoise: #6EE2E2;
+$light_purple: #6E9CE2;
+$purple: #846EE2;
+$magenta: #CB6EE2;
+$pink: #E26EB3;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3F3;
+}
+
+#svg {
+    border: 1px solid #000;
+    width: 100%;
+    height: 100vh;
+}
+
+.test {
+    min-height: 300px;
+    background-color: #aaa;
+}
+// .fadder {
+//     width: 100%;
+//     height: 1px;
+//     box-sizing: border-box;
+//     background-image: -webkit-linear-gradient(left,rgba(230,230,230,0),#e6e8e7,#e6e8e7,rgba(230,230,230,0));
+// }
+
+// .texty {
+//     font-size: 1.3em;
+//     &::selection {
+//         background: #f2337d;
+//         color: white;
+//     }
+// }

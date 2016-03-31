@@ -1,0 +1,17 @@
+@media screen and (min-width: 1850px) {
+  .wrapper {
+    width: 1800px; }
+
+  .main li {
+    width: 97px;
+    height: 107px;
+    font-size: 2.5em;
+    padding: 0 6px;
+    padding-top: 28px; }
+    .main li span {
+      font-size: 12px;
+      padding-top: 14px; }
+    .main li:before, .main li:after {
+      font-size: 13px; } }
+
+/*# sourceMappingURL=sampleTable1850.css.map */

@@ -1,0 +1,25 @@
+@media screen and (min-width: 1480px) {
+  .title_container .site__title {
+    font-size: 5em; }
+
+  .wrapper {
+    width: 1445px; }
+
+  .main li {
+    width: 78px;
+    height: 85px;
+    font-size: 2em;
+    padding: 0 4px;
+    padding-top: 25px; }
+    .main li span {
+      font-size: 11px;
+      padding-top: 10px; }
+    .main li:before, .main li:after {
+      font-size: 11px; }
+  .main .preview {
+    font-size: 1.5em;
+    padding-top: 30px; }
+    .main .preview span {
+      padding-top: 13px; } }
+
+/*# sourceMappingURL=sampleTable1480.css.map */

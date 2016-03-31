@@ -1,0 +1,47 @@
+@media screen and (min-width: 1480px) {
+
+    .title_container{
+        .site__title {
+            font-size: 5em;
+        }
+    }
+    .wrapper {
+        width: 1445px;
+    }
+
+    .main {
+        li {
+            width: 78px;
+            height: 85px;
+            font-size: 2em;
+            padding:0 4px;
+            padding-top:25px;
+
+            span {
+                font-size: 11px;
+                padding-top: 10px;
+            }
+
+            &:before, &:after {
+                font-size: 11px;
+
+            }
+
+            &:after {
+
+            }
+
+            &:hover {
+
+            }
+        }
+        .preview {
+            font-size: 1.5em;
+            padding-top: 30px;
+            span {
+                padding-top: 13px;
+            }
+
+        }
+    }
+}

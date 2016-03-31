@@ -1,0 +1,33 @@
+@media screen and (min-width: 1850px) {
+    .wrapper {
+        width: 1800px;
+    }
+
+    .main {
+        li {
+            width: 97px;
+            height: 107px;
+            font-size: 2.5em;
+            padding:0 6px;
+            padding-top:28px;
+
+            span {
+                font-size: 12px;
+                padding-top: 14px;
+            }
+
+            &:before, &:after {
+                font-size: 13px;
+            }
+
+            &:after {
+
+            }
+
+            &:hover {
+
+            }
+        }
+
+    }
+}
